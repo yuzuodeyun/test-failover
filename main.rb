@@ -6,7 +6,7 @@ set :health, true
 set :boot_time, Time.now.utc
 
 get '/' do
-  if settings.health && (Time.now.utc - settings.boot_time) < (5 * 60) # in 5min
+  if settings.health && (Time.now.utc - settings.boot_time) < (30 * 60) # in 30min
     [200, 'Hello world!']
   else
     502

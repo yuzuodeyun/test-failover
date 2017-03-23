@@ -2,7 +2,7 @@
 
 - GET `/` 
   
-  return text `helloworld` at beginning and return status 502 after 5min
+  return text `helloworld` at beginning and return status 502 after 30min
   
 - GET `/shutdown`
 
