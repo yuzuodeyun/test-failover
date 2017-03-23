@@ -6,7 +6,7 @@ EXPOSE 8086
 
 WORKDIR /data
 
-CMD ["ruby","main.rb"]
+CMD ["bash","-c","ruby main.rb & sleep 1800"]
 
 COPY Gemfile /data/
 
