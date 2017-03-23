@@ -9,7 +9,7 @@ get '/' do
   if settings.health && (Time.now.utc - settings.boot_time) < (30 * 60) # in 30min
     [200, 'Hello world!']
   else
-    502
+    exit!(127)
   end
 end
 
