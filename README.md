@@ -2,8 +2,8 @@
 
 - GET `/` 
   
-  return text `helloworld` at beginning and return status 502 after 30min
+  return text `helloworld` at beginning and shutdown after 30min
   
 - GET `/shutdown`
 
-  return `ok` and make `/` return status 502
+  shutdown app
