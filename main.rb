@@ -6,7 +6,7 @@ set :boot_time, Time.now.utc
 
 get '/' do
   if Time.now.utc - settings.boot_time < 30 * 60 # in 30min
-    [200, 'Hello world!']
+    [200, 'Hello world! Hello world!']
   else
     exit!(127)
   end
