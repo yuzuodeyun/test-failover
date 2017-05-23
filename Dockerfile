@@ -14,5 +14,4 @@ RUN bundle install
 
 COPY . /data/
 
-123456789
 
