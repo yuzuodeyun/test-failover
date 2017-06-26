@@ -14,4 +14,5 @@ RUN bundle install
 
 COPY . /data/
 
+COPY . /data/
 
